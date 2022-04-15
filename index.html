@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>QSMN</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function CuandoDigaSi(){
+            rsp1 = "Sabía que dirías que sí ♥ TE AMO MUCHO";
+            rsp2 = "♥ Eres el CSS de mi vida, bebé ♥";
+            document.getElementById("lblResultado").innerHTML = rsp1;
+            document.getElementById("lblResultado1").innerHTML = rsp2;
+        }
+        function CuandoDigaNo(){
+            ancho = window.innerWidth;
+            alto = window.innerHeight;
+
+            x = (Math.random() * ancho) + "px";
+            y = (Math.random() * alto) + "px";
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = x;
+            document.getElementById('btnNo').style.top = y;
+        }
+    </script>
+</head>
+<body>
+    <h1>¿Quieres ser mi novia?</h1>
+    <a id="btnSi" onclick="CuandoDigaSi()">SI</a>
+    <a id="btnNo" onmouseover="CuandoDigaNo()">NO</a>
+    <img src="pngegg.png" width="300">
+    <p id="lblResultado"></p>
+    <p id="lblResultado1"></p>
+</body>
+</html>

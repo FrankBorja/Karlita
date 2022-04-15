@@ -1,0 +1,27 @@
+body {
+    background: linear-gradient(to right, #000000, hsl(0, 81%, 17%));
+    text-align: center;
+}
+body a{
+    font-size: 40px;
+    padding: 15px;
+    border-radius: 20%;
+    background-color: rgb(199, 15, 15);
+    color: white;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+body p{
+    color: white;
+    font-size: 40px;
+}
+body h1{
+    color: white;
+    background-color: rgb(199, 15, 15);
+    font-size: 80px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 50px;
+    box-shadow: 3px 3px rgb(199, 15, 15), 5px 0 1em rgb(0, 0, 0);
+}
